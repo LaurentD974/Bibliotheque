@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ma Bibliothèque</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header>
+      <div>
+        <h2>Ma Bibliothèque</h2>
+        <input
+          type="text"
+          name="BookName"
+          id="inputBookName"
+          placeholder="Titre du livre"
+        />
+      </div>
+      <div>
+        <h2>Tri selon critères</h2>
+        <input
+          type="text"
+          name="Année de sortie"
+          id="inputYearBook"
+          placeholder="Année de sortie du livre"
+        />
+        <button id="btnSortAz">A-Z</button>
+        <button id="btnSortZa">Z-A</button>
+      </div>
+      <div class="rangeContainer">
+        <p>Nbre de sélection</p>
+        <input
+          type="range"
+          name="inputBookRange"
+          id="inputBookRange"
+          min="4"
+          max="20"
+          step="4"
+          value="4"
+        />
+        <span id="displayBookRange">4</span>
+      </div>
+    </header>
+    <main></main>
+    <script src="script.js"></script>
+  </body>
+</html>
